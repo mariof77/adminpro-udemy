@@ -1,11 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-graficas1',
-  templateUrl: './graficas1.component.html',
+  selector: 'app-grafico-dona',
+  templateUrl: './grafico-dona.component.html',
   styles: []
 })
-export class Graficas1Component implements OnInit {
+export class GraficoDonaComponent implements OnInit {
+  
+  // Doughnut
+  @Input() chartLabels:string[] = [];
+  @Input() chartData:number[] = [];
+  @Input() chartType:string = '';
+
+  // events
+  public chartClicked(e:any):void {
+    console.log(e);
+  }
+  
+  public chartHovered(e:any):void {
+    console.log(e);
+  }
 
   constructor() { }
 
@@ -38,5 +52,6 @@ export class Graficas1Component implements OnInit {
       'leyenda': '¿Le importa que le den gases?'
     },
   };
+
 
 }
