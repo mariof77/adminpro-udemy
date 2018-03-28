@@ -11,8 +11,8 @@ export class ProgressComponent implements OnInit {
   progreso2: number = 30;
 
   constructor() {     
-    console.log('Progreso1 ', this.progreso1);
-    console.log('Progreso2 ', this.progreso2);
+    // console.log('Progreso1 ', this.progreso1);
+    // console.log('Progreso2 ', this.progreso2);
   }
 
   ngOnInit() {

@@ -19,13 +19,13 @@ export class IncrementadorComponent implements OnInit {
   constructor() { 
     //console.log('Leyenda ', this.leyenda);
     //console.log('Progreso ', this.progreso);
-    console.log('constructor -> progreso ', this.progreso);
+    // console.log('constructor -> progreso ', this.progreso);
   }
 
   ngOnInit() {
     //leyenda => Viene inicializado desde el html pasado por parametro
     //console.log('Leyenda ', this.leyenda);
-    console.log('ngOnInit -> progreso ', this.progreso);
+    // console.log('ngOnInit -> progreso ', this.progreso);
 
   }
 
